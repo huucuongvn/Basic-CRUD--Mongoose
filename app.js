@@ -1,10 +1,10 @@
 var express = require('express');
-var app = express();
-var port = 3000;
 var bodyParse = require('body-parser');
 var mongoose = require('mongoose');
 var { swaggerUi, swaggerSpec } = require('./swagger');
 var agenda = require('./agenda');
+var app = express();
+var port = 3000;
 
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({extended: true}));
